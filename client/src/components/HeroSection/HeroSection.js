@@ -1,6 +1,5 @@
-
 import React from 'react';
-import './HeroSection.css'; // Assuming you have a CSS file for styling
+import './HeroSection.css'; 
 
 const HeroSection = () => {
     return (
@@ -8,9 +7,9 @@ const HeroSection = () => {
             
             <div className="hero-content">
                 <h1>Bikers Planet</h1>
-                <p>Discover the thrill of the open road</p>
+                <p>Your gateway to the world of bikes</p>
                 <div className="search-bar">
-                    <input type="text" placeholder="Search..." />
+                    <input type="text" placeholder="Search your bike hear" />
                     <button>Search</button>
                 </div>
             </div>

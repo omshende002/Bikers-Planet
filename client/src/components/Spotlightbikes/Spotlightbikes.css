@@ -1,0 +1,51 @@
+.tab-container{
+  
+    justify-content: center;
+    margin: 50px auto;
+  
+  }
+  
+  .tablist-menu {
+    margin: 5px 5px 15px 5px;
+    width: 100%;
+    border: 1px solid rgb(9, 9, 9);
+    padding: 9px 2px;
+    border-radius: 7rem;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "poppins";
+    letter-spacing: .5px;
+  }
+  .tablist-menu:hover{
+    background-color: #586F7C;
+    color: white;
+    outline: 1px solid rgb(9, 9, 9);
+    font-weight: 600;
+    transform:scale(.98);
+    transition: all ease-in-out 0.2s;
+  }
+  
+  
+  .tabpanal-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 90%;
+    margin: 0px auto;
+    margin-bottom: 100px;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  .cardContainer {
+    display: 'flex';
+    flex-direction: row;
+    justify-content: center;
+  
+  }
+  .tabpanal-heading{
+    text-align: center;
+    margin: 50px auto;
+  
+  }

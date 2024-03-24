@@ -1,34 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Dropdown from '../Dropdown/Dropdown.js';
 import './Navbar.css'; 
+import logo from './logo.png'; // Import the logo image
 
-const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleNavbar = () => {
-        setIsOpen(!isOpen);
-    };
-
+function Navbar() {
     return (
         <nav className="navbar">
-            <div ><img src="" alt='logo' className="navbar-logo"/>Bikers Planet</div>
-            <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-                <a href="#">Home</a>
-                <a href="#">New Bikes</a>
-                <a href="#">Used Bikes</a>
-                <a href="#">Compare</a>
-                <a href="#">News</a>
-                <a href="#">About</a>
+            <div className="navbar-logo">
+             <img src={logo} alt="logo" />
             </div>
-            <div className="navbar-login">
-                <button>Login</button>
-            </div>
-            <div className="navbar-toggle" onClick={toggleNavbar}>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <ul className="navbar-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">More</a></li>
+                <li><Dropdown title="More" items={['Bikes', 'Scooters']} /></li>
+            </ul>
         </nav>
     );
-};
+}
 
 export default Navbar;
