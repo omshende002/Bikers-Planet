@@ -1,0 +1,66 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .button-container button {
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .button-container button.active {
+    background-color: #b30000;
+  }
+  
+  .card-container-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .scroll-button {
+    background-color: #a48080;
+    color: #1b1515;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .scroll-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .card-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  .card-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+  
+  .card {
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }

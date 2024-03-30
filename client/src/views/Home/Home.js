@@ -3,6 +3,7 @@ import './Home.css'
 import Navbar from '../../components/Navbar/Navbar'
 import HeroSection from '../../components/HeroSection/HeroSection'
 import Spotlightbikes from '../../components/Spotlightbikes/Spotlightbikes'
+import Brands from '../../components/Brands/Brands'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <Navbar/>
         <HeroSection/>
         <Spotlightbikes/>
+        <Brands/>
     </div>
     </>
   )
